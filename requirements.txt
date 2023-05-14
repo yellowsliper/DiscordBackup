@@ -1,6 +1,5 @@
 asgiref==3.6.0
 asyncio==3.4.3
-discord==2.2.3
 discord-buttons-plugin==0.1.2
 discord-components @ git+https://github.com/kiki7000/discord.py-components@64a9416e4c0bad77ff8f901573f168db3b59f49e
 discord-webhook==1.1.0
