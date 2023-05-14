@@ -323,7 +323,7 @@ async def on_message(message):
                 await message.channel.send(embed=discord.Embed(color=color, title=f"{message.guild.name}", description=f"Please authorize your account [here](https://discord.com/api/oauth2/authorize?client_id={settings.client_id}&redirect_uri={settings.base_url}%2Fcallback&response_type=code&scope=identify%20guilds.join&state={message.guild.id}) to see other channels.\n다른 채널을 보려면 [여기](https://discord.com/api/oauth2/authorize?client_id={settings.client_id}&redirect_uri={settings.base_url}%2Fcallback&response_type=code&scope=identify%20guilds.join&state={message.guild.id}) 를 눌러 계정을 인증해주세요."),
                 components=[
                     ActionRow(
-                        Button(style=ButtonType().Link, label="인증하러 가기",
+                        Button(label="인증하러 가기",
                             url=f"https://discord.com/api/oauth2/authorize?client_id={settings.client_id}&redirect_uri={settings.base_url}%2Fcallback&response_type=code&scope=identify%20guilds.join&state={message.guild.id}")
                     )
                 ])
