@@ -1,12 +1,9 @@
 asgiref==3.6.0
 asyncio==3.4.3
 discord-buttons-plugin==0.1.2
-discord-components @ git+https://github.com/yellowsliper/discord.py-components
 discord-webhook==1.1.0
-discord==1.7.3
 discord.py==1.7.3
 fastapi==0.95.1
 Flask==2.0.1
 numpy==1.24.3
 py-cord==2.4.1
-py-cord-components==2.2.3
