@@ -1,4 +1,4 @@
-﻿import asyncio
+import asyncio
 import discord
 import requests
 import sqlite3
@@ -10,9 +10,9 @@ import setting as settings
 from setting import 관리자아이디
 import base64
 import requests
-from discord_components import DiscordComponents, Button, ActionRow
 from discord_webhook import DiscordEmbed, DiscordWebhook
 from discord_buttons_plugin import ButtonType
+from discord.components import Button, ActionRow
 
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
@@ -166,7 +166,6 @@ owner = [837944214708944896]
 
 @client.event
 async def on_ready():
-    DiscordComponents(client)
     print(f"Login: {client.user}\nInvite Link: https://discord.com/oauth2/authorize?client_id={client.user.id}&permissions=8&scope=bot")
     while True:
         await client.change_presence(activity=discord.Game(name=str(len(client.guilds)) + "개의 서버 이용"), status=discord.Status.online)
